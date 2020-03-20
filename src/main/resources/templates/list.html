@@ -7,9 +7,9 @@
 <body>
 <h1>To Do List</h1>
 <a href="/add">Add a Task</a><br />
-<div th:each="task : ${tasks}">
-    <h4 th:inline="text">[[${task.task}]] due on [[${task.dueDate}]]</h4>
-    <p th:text="This is ${task.priority} priority"></p>
+<div th:each="todo : ${todos}">
+    <h4 th:inline="text">[[${todo.task}]] due on [[${todo.dueDate}]]</h4>
+    <p th:text="${todo.priority}"></p>
 </div>
 </body>
 </html>

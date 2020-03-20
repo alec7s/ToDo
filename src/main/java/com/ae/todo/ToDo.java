@@ -1,7 +1,5 @@
 package com.ae.todo;
 
-import sun.jvm.hotspot.gc.shared.Generation;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,7 +15,7 @@ public class ToDo {
     private long id;
 
     @NotNull
-    @Size(min=3)
+    @Size(min=2)
     private String task;
 
     @NotNull
